@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head><title>new station</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" /><meta name="author" /><link href="../Content/bootstrap.rtl.css" rel="stylesheet" /><link href="../Content/MyStyle.css" rel="stylesheet" /><link href="../Content/all.css" rel="stylesheet" /><link href="../Content/jquery-ui.css" rel="stylesheet" /><link href="../Content/MyStyle.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.6.4.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script src="../Scripts/MyScript.js"></script>
+
+    <script src="../Scripts/bootstrap.bundle.js"></script>
+
+
+    <link rel="stylesheet" href= "mystyle.css"/>
+    <link rel="stylesheet" href= "all2.css"/>
+    <link rel="stylesheet" href= "bootstrap2.css"/>
+    <link rel="stylesheet" href= "boots2.css"/>
+</head>
+<body dir="rtl">
+
+    <form method="post" action="./NewStation.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" autocomplete="off" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZDA7WwOArhylwGe-OVG8dS_BMQuotthoF9aPuxPWbzk_DMcMLJj52rDblUPAZY6N4g2&amp;t=637814473746327080" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1CmgeF1tXnGgq3HFFRgmMzGQjbGDoNsea1rgzA1i197nkqu765C9nwXeWDrNL04ggL3x7nPptZpTfsTGfTCh3hBZH_3O-MBr4xEb03BiQW67uYSLEtwA4WUITjszZLgznw2&amp;t=14d69f50" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvi2vdCuheMJwgbpMKTdLDXVmy4ZPkfsg-4kcQN22SxUB7hDDLuj_1kFOizqNqW1w5-6hWRJU0G2XsqtK9oa7d3X2tZuq45mgG0nz2rI6_43tb1-_6UXu3TROyZtsBVJOME-dJ0J1KLE9eW8BCqEM1b41&amp;t=49337fe8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OBVUkjYe_Aw5lF9HeUyRDIcWWrTp-t8sUnYkpTMPvg-Gj19TmkIs-SShPbXXrR8BbqfRhTsjWPrBbz9MtwxcFiFqn1qTtAwSs6AVzNhHeGyXfFl6kpWzcnr3w-jXa5qNcieMBnnHVsGcj0vsuLzj6Dc1&amp;t=49337fe8" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+
+        <div class="container-fluid" style="background-color: #093f25;">
+            <div class="row p-1">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <h5 class="float-end text-white">برنامج عقود المحطات</h5>
+                </div>
+
+                <div class="col-8">
+                    <span id="lblDate" class=" text-white float-end">الإثنين /  17 يوليو  / 2023</span>
+                </div>
+            </div>
+        </div>
+
+        <span id="Label1">General</span>
+
+        <nav class="navbar navbar-expand-lg navbar-light ForHeader">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5" href="#">
+                    <img src="3.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Default.aspx"><i class="fa-solid  text-success mx-2 fa-house"></i>الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gas-pump mx-2 text-success"></i>المحطات
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./NewStation.aspx"><i class="fa-solid fa-circle-plus   mx-2"></i>اضافة  محطة</a> </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Updates.aspx"><i class="fa-solid fa-file-pen mx-2 iconss"></i>تعديل  محطة</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-shop mx-2 text-success"></i>انشطة خدمية
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./NewExActivity.aspx"><i class="fa-solid fa-circle-plus iconss mx-2"></i>اضافة نشاط</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./UpdateExActivity.aspx"><i class="fa-solid fa-file-pen iconss mx-2"></i>تعديل نشاط</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Search.aspx"><i class="fa-solid fa-magnifying-glass-plus text-success mx-2"></i>
+                                <h6 class="d-inline mx-2 ">البحث</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Check.aspx"><i class="fa-solid text-success fa-list-check"></i>
+                                <h6 class="d-inline mx-1">مراجعة</h6>
+                            </a>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-shop mx-2 text-success"></i>التقارير
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./Reports.aspx"><i class="fa-solid fa-hashtag mx-2"></i>احصائيات رقمية</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./DetsReprts.aspx"><i class="fa-solid fa-file-pen iconss mx-2"></i>تقارير تفصيلية</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./changepass.aspx"><i class="fa-solid text-success fa-unlock mx-2"></i>
+                                <h6 class="d-inline mx-1">تغيير كلمة المرور</h6>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <input type="submit" name="ctl00$btnExit" value="خروج" id="btnExit" class="btn btn-danger my-2" />
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        
+        
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+    <section class="sectiondfpg">
+        <div class="container-fluid hero">
+            <h5 class="text-center p-2 text-white">
+                <i class="fa-solid fa-circle-plus mx-2"></i>اضافة بيانات محطة
+            </h5>
+        </div>
+    </section>
+
+
+    <section class="sectiondfpg">
+        <div class="container-fluid bg-success">
+            <div class="row">
+                <div class="col-md-1 text-center ">
+                    <i class="fa-solid fa-2x fa-fire-flame-simple mt-1 text-white"></i>
+                </div>
+                <div class="col-11 bg-secondary rounded rounded-3 shadow-sm">
+                    <h4 class="text-white p-1">بيانات اساسية </h4> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-2"style="background-image:url('3.jpg');">
+            <div class="row gx-3 ">
+                <div class="col-md-auto col-sm-12">
+                    <p>
+                         المحافظة &nbsp
+                    <select name="ctl00$ContentPlaceHolder1$drpCity" id="ContentPlaceHolder1_drpCity" class="DropList">
+	<option value="0">المحافظات</option>
+	<option value="1">القاهرة</option>
+	<option value="2">الجيزة</option>
+	<option value="3">الأسكندرية</option>
+	<option value="4">الدقهلية</option>
+	<option value="5">الشرقية</option>
+	<option value="6">المنوفية</option>
+	<option value="7">القليوبية</option>
+	<option value="8">البحيرة</option>
+	<option value="9">الغربية</option>
+	<option value="10">بور سعيد</option>
+	<option value="11">دمياط</option>
+	<option value="12">الإسماعلية</option>
+	<option value="13">السويس</option>
+	<option value="14">كفر الشيخ</option>
+	<option value="15">الفيوم</option>
+	<option value="16">بني سويف</option>
+	<option value="17">مطروح</option>
+	<option value="18">شمال سيناء</option>
+	<option value="19">جنوب سيناء</option>
+	<option value="20">المنيا</option>
+	<option value="21">أسيوط</option>
+	<option value="22">سوهاج</option>
+	<option value="23">قنا</option>
+	<option value="24">البحر الأحمر</option>
+	<option value="25">الأقصر</option>
+	<option value="26">أسوان</option>
+	<option value="27">الواحات</option>
+	<option value="28">الوادي الجديد</option>
+
+</select>
+                    </p>
+                    <p>
+                        اسم المحطة&nbsp
+                  <input name="ctl00$ContentPlaceHolder1$txtSTname" type="text" id="ContentPlaceHolder1_txtSTname" class="Text-Style mx-3" />
+                    </p>
+                      <p>
+                        العنوان&nbsp
+                  <input name="ctl00$ContentPlaceHolder1$txtSTname" type="text" id="ContentPlaceHolder1_txtSTname" class="Text-Style mx-3" />
+                    </p>
+                    <p>
+                        كـود المحطة &nbsp &nbsp
+                 <input name="ctl00$ContentPlaceHolder1$txtSTCode" type="text" id="ContentPlaceHolder1_txtSTCode" class="Text-Style  " />
+                    </p>
+
+                    <p>
+                        عنـوان المحطة&nbsp 
+              <input name="ctl00$ContentPlaceHolder1$txtStAddress" type="text" id="ContentPlaceHolder1_txtStAddress" class="Text-Style" />
+                    </p>
+
+                    <p>
+                        &nbsp المـساحــة
+             <input name="ctl00$ContentPlaceHolder1$txtSpace" type="number" id="ContentPlaceHolder1_txtSpace" class="Text-Style mx-4" />
+                    </p>
+
+
+                    <p>
+                        &nbsp  الأحــداثيـات
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+                    <p>
+                        &nbsp  الجهة الأساسية
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+                    <p>
+                        &nbsp الجهة اليمنى
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+                    <p>
+                        &nbsp  الجهة اليسرى
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+                    <p>
+                        &nbsp  الجهة الخلفية
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+                    <p>
+                        &nbsp  الجهة الأساسية
+                 <input name="ctl00$ContentPlaceHolder1$txtStCord" type="text" id="ContentPlaceHolder1_txtStCord" class="Text-Style mx-3" />
+                    </p>
+
+                    <p>
+                        &nbsp نقـاط التموين
+                   <input name="ctl00$ContentPlaceHolder1$txtChargPoints" type="number" id="ContentPlaceHolder1_txtChargPoints" class="Text-Style" />
+                    </p>
+
+                </div>
+
+                <div class="col-md-auto col-sm-12 ">
+
+                    <p>
+                        &nbsp تاريخ التشغيل 
+                     <input name="ctl00$ContentPlaceHolder1$txtWorkingDate" type="text" id="ContentPlaceHolder1_txtWorkingDate" class="Text-Style mx-2" />
+                    </p>
+
+                    <div>
+                        <p>
+                            &nbsp ملكية المحطة
+                       <span class="mx-1"><input id="ContentPlaceHolder1_CarGas" type="radio" name="ctl00$ContentPlaceHolder1$Pro" value="CarGas" onclick="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$CarGas)& 0)" /><label for="ContentPlaceHolder1_CarGas">شركة  </label></span>
+                       <input name="ctl00$ContentPlaceHolder1$txtWorkingDate" type="text" id="ContentPlaceHolder1_txtWorkingDate" class="Text-Style mx-2" />
+                            <span class="mx-1"><input id="ContentPlaceHolder1_Others" type="radio" name="ctl00$ContentPlaceHolder1$Pro" value="Others" onclick="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$Others)& 0)" /><label for="ContentPlaceHolder1_Others">وكيل</label></span>
+                            <input name="ctl00$ContentPlaceHolder1$txtWorkingDate" type="text" id="ContentPlaceHolder1_txtWorkingDate" class="Text-Style mx-2" />
+
+                            
+
+
+                        </p>
+
+                    </div>
+                    <div class="d-flex">
+                        <p>
+                            الخدمات&nbsp &nbsp
+                   <table id="ContentPlaceHolder1_CheckBoxList1" class="checkboxlist" style="width:460px;">
+	<tr>
+		<td><input id="ContentPlaceHolder1_CheckBoxList1_0" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$0" checked="checked" value="2" /><label for="ContentPlaceHolder1_CheckBoxList1_0">زيوت و شحوم</label></td><td><input id="ContentPlaceHolder1_CheckBoxList1_1" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$1" value="3" /><label for="ContentPlaceHolder1_CheckBoxList1_1">زوايا و اتزان</label></td><td><input id="ContentPlaceHolder1_CheckBoxList1_2" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$2" value="4" /><label for="ContentPlaceHolder1_CheckBoxList1_2">ميكانيكا</label></td><td><input id="ContentPlaceHolder1_CheckBoxList1_3" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$3" value="5" /><label for="ContentPlaceHolder1_CheckBoxList1_3">كهرباء </label></td><td><input id="ContentPlaceHolder1_CheckBoxList1_4" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$4" value="6" /><label for="ContentPlaceHolder1_CheckBoxList1_4">غسيل </label></td><td><input id="ContentPlaceHolder1_CheckBoxList1_4" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$4" value="6" /><label for="ContentPlaceHolder1_CheckBoxList1_4">مطلع سماوي </label></td><td><input id="ContentPlaceHolder1_CheckBoxList1_4" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList1$4" value="6" /><label for="ContentPlaceHolder1_CheckBoxList1_4">ماركت </label></td>
+	</tr>
+	
+</table>
+                            
+                        </p>
+
+
+                    </div>
+
+                    <p>
+                        نوع الضاغط &nbsp &nbsp &nbsp
+                  <select name="ctl00$ContentPlaceHolder1$drpCompress" id="ContentPlaceHolder1_drpCompress" class="DropList">
+	<option value="0">نوع الضاغط</option>
+	<option value="1">كهرباء</option>
+	<option value="2">غاز</option>
+
+</select>
+                    </p>
+
+                    <p>
+                        عدد الضواغط &nbsp 
+                     <input name="ctl00$ContentPlaceHolder1$txtCompress" type="number" id="ContentPlaceHolder1_txtCompress" class="Text-Style" />
+                    </p>
+
+                    <p>
+                        عدد الطلمبات &nbsp
+                   <input name="ctl00$ContentPlaceHolder1$txtChargPump" type="number" id="ContentPlaceHolder1_txtChargPump" class="Text-Style" />
+                    </p>
+
+                    <p>
+                        الـمـظلة &nbsp  &nbsp &nbsp
+                <select name="ctl00$ContentPlaceHolder1$drpUmberella" id="ContentPlaceHolder1_drpUmberella" class="DropList mx-4">
+	<option value="0">المظلة</option>
+	<option value="1">يوجد</option>
+	<option value="2">لايوجد</option>
+
+</select>
+                    </p>
+
+                </div>              
+                <div class="row">
+                     <div class="mx-1 mt-1">
+                    <div class="d-inline-flex">
+                        <p>حالة المحطة</p>
+                    </div>
+                    <input id="ContentPlaceHolder1_StatusCheck" type="checkbox" name="ctl00$ContentPlaceHolder1$StatusCheck" onclick="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$StatusCheck)& 0)" />
+                    <span class="mx-1">متوقفة</span>
+                    <div class="d-inline-flex">
+                        
+                    </div>
+
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                    <span id="ContentPlaceHolder1_ctl00" style="color:Red;visibility:hidden;">من فضلك اختار المحافظة</span><br />
+                    <span id="ContentPlaceHolder1_ctl01" style="color:Red;visibility:hidden;">من فضلك ادخل كود المحطة</span>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid bg-success">
+            <div class="row">
+                <div class="col-md-1 text-center">
+                    <i class="fa-solid fa-2x mt-1 fa-file-signature text-white"></i>
+                </div>
+
+                <div class="col-11  bg-secondary rounded-3 shadow-sm">
+                    <h4 class="text-white p-1">بيانات التعاقد</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-lg-12 col-md col-12">
+                    <div class="d-flex flex-wrap p-1">
+                        <div>
+                            بداية العقد 
+                             <input name="ctl00$ContentPlaceHolder1$txtConStart" type="text" id="ContentPlaceHolder1_txtConStart" class="Text-Style" style="width:150px;" />
+                            <span id="ContentPlaceHolder1_ctl02" style="color:Red;display:none;">تاريخ العقد مطلوب</span>
+                        </div>
+
+                        <div class="mx-2">
+                            تاريخ اخر تجديد 
+                             <input name="ctl00$ContentPlaceHolder1$txtNewNewContact" type="text" id="ContentPlaceHolder1_txtNewNewContact" class="Text-Style" style="width:150px;" />
+                            <span id="ContentPlaceHolder1_ctl03" style="color:Red;display:none;">تاريخ التجديد مطلوب</span>
+                        </div>
+
+                        <div>
+                            <p>
+                                مدة العقد
+                                <input name="ctl00$ContentPlaceHolder1$txtYears" type="text" onchange="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$txtYears)& 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ContentPlaceHolder1_txtYears" style="width:50px;" />
+                            </p>
+                        </div>
+
+
+                        <div class="mx-2">
+                            تاريخ الإنتهاء                   
+                     <input name="ctl00$ContentPlaceHolder1$txtConEnd" type="text" onchange="javascript:setTimeout(__doPostBack(ctl00$ContentPlaceHolder1$txtConEnd)& 0 ) "onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ContentPlaceHolder1_txtConEnd" class=" Text-Style " style="width:150px;" />
+                            <span id="ContentPlaceHolder1_ctl04" style="color:Red;display:none;">تاريخ الإنتهاء مطلوب</span>
+                        </div>
+                        <div class="mx-1 p-1 text-primary">
+                            <span id="ContentPlaceHolder1_lbldateDiff"></span>
+                        </div>
+                        <div class=" w-100"></div>
+                        <div class="clearfix"></div>
+                        <div class="mx-2">
+                            طرف اول
+                              <input name="ctl00$ContentPlaceHolder1$txtPerson1" type="text" id="ContentPlaceHolder1_txtPerson1" class=" Text-Style" style="width:150px;" />
+                        </div>
+                        <div class="mx-5">
+                            &nbsp&nbsp طرف ثان
+                              <input name="ctl00$ContentPlaceHolder1$txtPerson2" type="text" id="ContentPlaceHolder1_txtPerson2" class="Text-Style" style="width:150px;" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <div class="container-fluid mt-2 p-3">
+            <div class="row  justify-content-center  mt-0">
+                <div class="col-md-auto col-sm-12">
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$AddStation" value="حـفظ البيانات" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(quotctl00$ContentPlaceHolder1$AddStation&quot&quot&quottruequot&quot &quot&quotfalse, false))" id="ContentPlaceHolder1_AddStation" class="btn btn-primary" />
+
+                </div>
+                <div class="col-md-auto col-sm-12">
+                    <input type="button" name="ctl00$ContentPlaceHolder1$Cancel" value="الغاء" onclick="javascript:__doPostBack(ctl00$ContentPlaceHolder1$Cancel)" id="ContentPlaceHolder1_Cancel" class="btn btn-danger" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    
+    <section>
+        <div class="modal  " id="UpDocumentsModal" tabindex="-1"
+            data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">
+                            <i class="fa-solid text-primary fa-folder-open"></i>المرفقات</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div>
+                                    <p>
+                                        <span class="text-primary">اسم المحطة :</span>
+                                        <span id="ContentPlaceHolder1_lblStname"></span>
+                                    </p>
+
+                                </div>
+                                <div class="mx-3 mb-3">
+                                    <p>
+                                        <span class="text-primary">كود المحطة:</span>
+                                        <span id="ContentPlaceHolder1_lblStCode"></span>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="d-flex d-inline-flex flex-wrap">
+                                        
+                                        <div>
+                                            <select name="ctl00$ContentPlaceHolder1$drpDocuments" id="ContentPlaceHolder1_drpDocuments" class="DropList">
+	<option value="0">المرفقات</option>
+	<option value="البروتوكول">البروتوكول</option>
+	<option value="العقد">العقد</option>
+	<option value="الخطابات">الخطابات</option>
+	<option value="عقد التجديد">عقد التجديد</option>
+	<option value="شروط التجديد">شروط التجديد</option>
+	<option value="الرسم الهندسي">الرسم الهندسي</option>
+	<option value="ملحق1">ملحق1</option>
+	<option value="ملحق2">ملحق2</option>
+	<option value="ملحق3">ملحق3</option>
+	<option value="صورة المحطة">صورة المحطة</option>
+
+</select>
+                                        </div>
+
+                                        <div>
+                                            <input type="file" name="ctl00$ContentPlaceHolder1$DocsUpload" id="ContentPlaceHolder1_DocsUpload" class="form-control mx-2" />
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="ctl00$ContentPlaceHolder1$BtnUploadDocs" value="تحميل المرفق" id="ContentPlaceHolder1_BtnUploadDocs" class="btn btn-primary mx-2" />
+                                        </div>
+
+                                        <div>
+                                            <span id="ContentPlaceHolder1_lblSuccess"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnCloseModals" value="إغـلاق" id="ContentPlaceHolder1_btnCloseModals" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+    
+    <div class="modal bd-example-modal-sm" id="ModalDate" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h6 class="text-white">تحذير</h6>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-center text-danger">تاريخ الإنتهاء اصغر من تاريخ اخر تجديد </h6>
+                    <div class="modal-footer justify-content-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+    <div class="modal fade bd-example-modal-sm" id="ModalStation" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class=" text-white">رسالة</h5>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center text-success">المحطة مسجلة من قبل </h5>
+                    <div class="modal-footer justify-content-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_ctl00"), document.getElementById("ContentPlaceHolder1_ctl01"), document.getElementById("ContentPlaceHolder1_ctl02"), document.getElementById("ContentPlaceHolder1_ctl03"), document.getElementById("ContentPlaceHolder1_ctl04"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_ctl00 = document.all ? document.all["ContentPlaceHolder1_ctl00"] : document.getElementById("ContentPlaceHolder1_ctl00");
+ContentPlaceHolder1_ctl00.controltovalidate = "ContentPlaceHolder1_drpCity";
+ContentPlaceHolder1_ctl00.errormessage = "من فضلك اختار المحافظة";
+ContentPlaceHolder1_ctl00.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ctl00.initialvalue = "0";
+var ContentPlaceHolder1_ctl01 = document.all ? document.all["ContentPlaceHolder1_ctl01"] : document.getElementById("ContentPlaceHolder1_ctl01");
+ContentPlaceHolder1_ctl01.controltovalidate = "ContentPlaceHolder1_txtSTCode";
+ContentPlaceHolder1_ctl01.errormessage = "من فضلك ادخل كود المحطة";
+ContentPlaceHolder1_ctl01.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ctl01.initialvalue = "";
+var ContentPlaceHolder1_ctl02 = document.all ? document.all["ContentPlaceHolder1_ctl02"] : document.getElementById("ContentPlaceHolder1_ctl02");
+ContentPlaceHolder1_ctl02.controltovalidate = "ContentPlaceHolder1_txtConStart";
+ContentPlaceHolder1_ctl02.errormessage = "تاريخ العقد مطلوب";
+ContentPlaceHolder1_ctl02.display = "Dynamic";
+ContentPlaceHolder1_ctl02.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ctl02.initialvalue = "";
+var ContentPlaceHolder1_ctl03 = document.all ? document.all["ContentPlaceHolder1_ctl03"] : document.getElementById("ContentPlaceHolder1_ctl03");
+ContentPlaceHolder1_ctl03.controltovalidate = "ContentPlaceHolder1_txtNewNewContact";
+ContentPlaceHolder1_ctl03.errormessage = "تاريخ التجديد مطلوب";
+ContentPlaceHolder1_ctl03.display = "Dynamic";
+ContentPlaceHolder1_ctl03.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ctl03.initialvalue = "";
+var ContentPlaceHolder1_ctl04 = document.all ? document.all["ContentPlaceHolder1_ctl04"] : document.getElementById("ContentPlaceHolder1_ctl04");
+ContentPlaceHolder1_ctl04.controltovalidate = "ContentPlaceHolder1_txtConEnd";
+ContentPlaceHolder1_ctl04.errormessage = "تاريخ الإنتهاء مطلوب";
+ContentPlaceHolder1_ctl04.display = "Dynamic";
+ContentPlaceHolder1_ctl04.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ctl04.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ContentPlaceHolder1_ctl00').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ctl00'));
+}
+
+document.getElementById('ContentPlaceHolder1_ctl01').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ctl01'));
+}
+
+document.getElementById('ContentPlaceHolder1_ctl02').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ctl02'));
+}
+
+document.getElementById('ContentPlaceHolder1_ctl03').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ctl03'));
+}
+
+document.getElementById('ContentPlaceHolder1_ctl04').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ctl04'));
+}
+//]]>
+</script>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head><title>
+
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" /><meta name="author" /><link href="../Content/bootstrap.rtl.css" rel="stylesheet" /><link href="../Content/MyStyle.css" rel="stylesheet" /><link href="../Content/all.css" rel="stylesheet" /><link href="../Content/jquery-ui.css" rel="stylesheet" /><link href="../Content/MyStyle.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.6.4.js"></script>
+    <script src="../Scripts/jquery-ui.js"></script>
+    <script src="../Scripts/MyScript.js"></script>
+
+    <script src="../Scripts/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="all.css"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="jq.css"/>
+    <link rel="stylesheet" href="boots.css"/>
+    <link rel="stylesheet" href="boots.css"/>
+
+
+    
+</head>
+<body dir="rtl">
+
+    <form method="post" action="./Default.aspx" id="form1" autocomplete="off">
+
+        <div class="container-fluid" style="background-color: #053623;">
+            <div class="row p-1">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <h5 class="float-end text-white">برنامج عقود المحطات</h5>
+                </div>
+
+                <div class="col-8">
+                    <span id="lblDate" class=" text-white float-end">الإثنين /  17 يوليو  / 2023</span>
+                </div>
+            </div>
+        </div>
+
+        <span id="Label1">General</span>
+
+        <nav class="navbar navbar-expand-lg navbar-light ForHeader">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5" href="#">
+                    <img src="3.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Default.aspx"><i class="fa-solid  text-success mx-2 fa-house"></i>الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gas-pump mx-2 text-success"></i>المحطات
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./NewStation.aspx"><i class="fa-solid fa-circle-plus   mx-2"></i>اضافة  محطة</a> </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Updates.aspx"><i class="fa-solid fa-file-pen mx-2 iconss"></i>تعديل  محطة</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-shop mx-2 text-success"></i>المواقع 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./NewExActivity.aspx"><i class="fa-solid fa-circle-plus iconss mx-2"></i>اضافة موقع</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./UpdateExActivity.aspx"><i class="fa-solid fa-file-pen iconss mx-2"></i>تعديل موقع</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Search.aspx"><i class="fa-solid fa-magnifying-glass-plus text-success mx-2"></i>
+                                <h6 class="d-inline mx-2 ">البحث</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Check.aspx"><i class="fa-solid text-success fa-list-check"></i>
+                                <h6 class="d-inline mx-1">مراجعة</h6>
+                            </a>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-shop mx-2 text-success"></i>التقارير
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./Reports.aspx"><i class="fa-solid fa-hashtag mx-2"></i>احصائيات رقمية</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./DetsReprts.aspx"><i class="fa-solid fa-file-pen iconss mx-2"></i>تقارير تفصيلية</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./changepass.aspx"><i class="fa-solid text-success fa-unlock mx-2"></i>
+                                <h6 class="d-inline mx-1">تغيير كلمة المرور</h6>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+
+                            <input type="submit" name="ctl00$btnExit" value="خروج" id="btnExit" class="btn btn-danger my-2" />
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        
+        
+    <section>
+        <div class="container-fluid hero">
+            <div class="container-fluid ">
+                <h5 class="text-center p-2 text-white">
+                    <i class="fa-solid fa-house mx-2"></i>الصفحة الرئيسية
+                </h5>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <div style="font-size:19px;color:rgb(11, 100, 42);font-weight:bold">
+                       <span><i class="fa-solid fa-circle-down text-secondary"></i></span>
+                        <span id="ContentPlaceHolder1_lblCount">اجمالى عدد المحطات المسجلة 248</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container p-3">
+
+            <div class="row justify-content-center ">
+                <div class="col-8">
+                
+                <div class="d-flex">
+                    <div class="card mb-2"  style="width: 14rem;">
+                        <div class="card-header p-3 pt-2">
+                            <div class=" shadow-sm  text-center  mt-n4 position-absolute">
+                                <i class="fa-solid fa-gas-pump text-primary fa-2x"></i>
+                            </div>
+                            <div class="text-end pt-1 ">
+                                <p class="text-sm mb-0" style="font-weight:bold"> محطات قائمة </p>
+                                <h3 class="mb-0 text-center">
+                                    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+                                        <img src="9.png" alt="Alternative text for the image" style="max-width: 110%; max-height: 110%;" />
+                                      </div>
+                                    <span id="ContentPlaceHolder1_lblGas">247</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3">
+                        </div>
+                    </div>
+
+
+
+                    <div class="card  mb-2 mx-1" style="width: 14rem;">
+                        <div class="card-header p-3 pt-2">
+                            <div class=" shadow-sm  text-center border-radius-xl mt-n4 position-absolute">
+                               <i class="fa-solid fa-right-left fa-2x text-primary"></i>
+                            </div>
+                            <div class="text-end pt-1">
+                                <p class="text-sm mb-0 " style="font-weight:bold">مواقع شركات</p>
+                                <h3 class="mb-0">
+                                    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+                                        <img src="11.jpg" alt="Alternative text for the image" style="max-width: 110%; max-height: 110%;" />
+                                      </div>
+                                    <span id="ContentPlaceHolder1_lblTransfer">33</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3">
+                        </div>
+                    </div>
+
+                    <div class="card mb-2 mx-1" style="width: 14rem;">
+                        <div class="card-header p-3 pt-2">
+                            <div class=" shadow-sm  text-center border-radius-xl mt-n4 position-absolute">                              
+                                <i class="fa-solid fa-oil-can text-primary fa-2x"></i>
+                            </div>
+                            <div class="text-end pt-1">
+                                <p class="text-sm mb-0 " style="font-weight:bold">مواقع أفراد</p>
+                                <h3 class="mb-0">
+                                    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+                                        <img src="12.jpg" alt="Alternative text for the image" style="max-width: 110%; max-height: 110%;" />
+                                      </div>
+                                    <span id="ContentPlaceHolder1_lblOil">27</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3">
+                        </div>
+                    </div>
+
+                     <div class="card mb-2 mx-1" style="width: 14rem;">
+                        <div class="card-header p-3 pt-2">
+                            <div class=" shadow-sm  text-center border-radius-xl mt-n4 position-absolute">                              
+                               <i class="fa-solid fa-2x text-primary fa-fire-flame-simple"></i>
+                            </div>
+                            <div class="text-end pt-1">
+                                <p class="text-sm mb-0 " style="font-weight:bold">جاري الدراسة </p>
+                                <h3 class="mb-0">
+                                    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+                                        <img src="13.jpg" alt="Alternative text for the image" style="max-width: 115%; max-height: 112%;" />
+                                      </div>
+                                    <span id="ContentPlaceHolder1_lblBenz">208</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3">
+                        </div>
+                    </div>                    
+
+
+                      <div class="card mb-2 mx-1" style="width: 16rem;">
+                        <div class="card-header p-3 pt-2">
+                            <div class=" shadow-sm  text-center border-radius-xl mt-n4 position-absolute">
+                               
+                                <i class="fa-solid fa-store text-primary fa-2x"></i>
+                            </div>
+                            <div class="text-end pt-1">
+                                <p class="text-sm mb-0 " style="font-weight:bold">استبعاد</p>
+                                <h3 class="mb-0">
+                                    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+                                        <img src="14.jpg" alt="Alternative text for the image" style="max-width: 110%; max-height: 110%;" />
+
+                                    <span id="ContentPlaceHolder1_lblNonFuel">1</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3">
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url("../Fonts/Cairo-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url("../Fonts/Cairo-Bold.ttf");
+}
+
+
+body {
+    font-family: Cairo-Regular, sans-serif;
+    font-size: 16px;
+    color: black !important;
+    /* background-image: url('images/backgrd.jpg') online */
+    background-image: url('../images/backgrd.jpg')
+}
+
+.ForHeader {
+    background-image:url('10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ForBar {
+    background-color: #F1EEE9;
+}
+.navbar-nav{
+    padding:5px !important;
+}
+.navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    padding: 5px;
+    margin-left:20px !important;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: #35b04c !important;
+    color: #FFFFFF !important;
+    border-radius: 6px !important;
+}
+
+.dropdown .dropdown-menu a {
+    color: #35b04c !important;
+    font-weight:600;
+}
+
+
+.dropdown .dropdown-menu a:hover {
+    background-color: #35b04c !important;
+    color: #FFFFFF !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/menu.png')
+ 
+}
+
+
+
+
+
+.dropdown .dropdown-menu {
+    width: 300px !important;
+    background-color: #FFFFFF !important;
+    text-align: right;
+    box-shadow:  6px #b1b4b280;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+.hero {  
+    
+    margin:0;
+    background-color: #093f25;
+    padding:1px;
+    clip-path: ellipse(55% 100% at 50.88% 0%);
+}
+
+
+.Text-Style {
+    border-radius: 2px;    
+    width: 200px;
+    height: 35px;
+    border: solid 2px #bcbcbc;
+    
+}
+    .Text-Style:hover {
+       /* box-shadow: 2px 2px 3px #87cdf4a9;*/
+        border: solid 2px #636060;
+    }
+
+.DropList {
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    height: 35px;    
+   /* overflow-y:scroll;*/
+    border:groove;
+    color:#0f7235;
+}
+  
+
+p {
+   
+    
+    padding: 2px;
+    margin: 2px;
+   
+}
+
+
+.grdView {
+    
+    font-size: 16px;
+    margin:0;
+   
+}
+
+.checkboxlist input {
+   
+    color: #494949;
+   
+    margin-right: 2px !important;
+}
+.checkboxlist label {
+    color: #494949;
+    margin-right: 3px !important;
+}
+
+.testt2 > label  {
+    color:red !important;
+}
+
+.Grdheader{
+    color:black;
+    font-weight:normal;
+}
+.GrdItems{
+    color:#112397;
+    font-size:17px;
+}
+
+.radio-spacing input[type="radio"] {
+    margin-left: 5px; /* Adjust this value to increase/decrease the space */
+}
+
+.gridViewPager td {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    color:cadetblue;
+    background-color:#15133C;
+    text-decoration:none;
+    
+}
+
+.disabledDiv {
+    opacity: 0.5; /* Set the desired opacity to make it appear disabled */
+    pointer-events: none; /* Disable pointer events to prevent interactions */
+}
+.enabledDiv {
+    color:black;opacity:1.0;pointer-events: auto;
+}
